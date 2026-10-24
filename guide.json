@@ -52,7 +52,7 @@
       ],
       "stepsPs": [
         "$exe = 'dsh-pet-standalone-webm-chat-setup.exe'",
-        "Invoke-WebRequest -Uri \"https://github.com/MerZlin/dsh-pet-indesktop/releases/download/v4.4.0/$exe\" -OutFile $exe -UseBasicParsing",
+        "curl.exe -L --fail -o $exe \"https://github.com/MerZlin/dsh-pet-indesktop/releases/download/v4.4.0/$exe\"",
         "if ((Get-FileHash $exe -Algorithm SHA256).Hash.ToLower() -ne '91d887482b9ef0dc9d93d1dfe01a042002040712afc28b06c6dfd3f1b805b576') { throw 'SHA256 校验失败' }",
         "Start-Process -FilePath (Join-Path $PWD $exe) -ArgumentList '/VERYSILENT','/SUPPRESSMSGBOXES','/NORESTART' -Wait",
         "$app = Join-Path $env:LOCALAPPDATA 'Programs\\dsh-pet-standalone-webm-chat\\dsh-pet-standalone-webm-chat.exe'",
