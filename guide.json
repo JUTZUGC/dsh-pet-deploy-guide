@@ -8,7 +8,7 @@
     "oneLiner": "基于 Python + PySide6 的跨平台桌面宠物，支持 AI 对话",
     "officialRepo": "https://github.com/MerZlin/dsh-pet-indesktop",
     "officialDocs": "https://github.com/MerZlin/dsh-pet-indesktop#readme",
-    "stars": "2k",
+    "stars": "2.3k",
     "license": "MIT",
     "highlights": [
       "跨平台：Windows / macOS（arm64）/ Linux（x86_64），另有 Android 测试版",
