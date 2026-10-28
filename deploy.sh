@@ -2,7 +2,7 @@
 set -euo pipefail
 # dsh-pet 一键安装脚本（第三方指南）——按官方文档封装
 # 官方文档：https://github.com/MerZlin/dsh-pet-indesktop#readme
-# 更新日期：2026-10-24
+# 更新日期：2026-10-28
 # 类型：binary
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
